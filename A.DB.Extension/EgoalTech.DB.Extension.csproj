@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8a9e207c-794e-4066-ab04-04d2e8f95f04</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EgoalTech.DB.Extension</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="EgoalTech.Commons" />
+    <Reference Include="EgoalTech.DB" />
+    <Reference Include="EgoalTech.Validation" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="EgoalTech\DB\Extension\DataVerifyErrorException.cs" />
+    <Compile Include="EgoalTech\DB\Extension\ArrayExtension.cs" />
+    <Compile Include="System\Reflection\FastInvokeHandler.cs" />
+    <Compile Include="System\Reflection\MethodInfoExtension.cs" />
+    <Compile Include="EgoalTech\DB\Extension\SqlFormatterExtension.cs" />
+    <Compile Include="EgoalTech\DB\Extension\IDbContext.cs" />
+    <Compile Include="EgoalTech\DB\Extension\OrderBy!1.cs" />
+    <Compile Include="EgoalTech\DB\Extension\PropertyInfoExtension.cs" />
+    <Compile Include="EgoalTech\DB\Extension\ExpressionConverter.cs" />
+    <Compile Include="EgoalTech\DB\Extension\IDbQuery.cs" />
+    <Compile Include="EgoalTech\DB\Extension\DbQuery.cs" />
+    <Compile Include="EgoalTech\DB\Extension\DbQuery!1.cs" />
+    <Compile Include="EgoalTech\DB\Extension\IDbRuleContext.cs" />
+    <Compile Include="EgoalTech\DB\Extension\IRuleMapper!1.cs" />
+    <Compile Include="EgoalTech\DB\Extension\DbRuleContext.cs" />
+    <Compile Include="EgoalTech\DB\Extension\IDbObjectInfo!1.cs" />
+    <Compile Include="EgoalTech\DB\Extension\IModelValidator!1.cs" />
+    <Compile Include="EgoalTech\DB\Extension\RuleEngine!1.cs" />
+    <Compile Include="EgoalTech\DB\Extension\DbOperation.cs" />
+    <Compile Include="EgoalTech\DB\Extension\DbOperationExtension.cs" />
+    <Compile Include="EgoalTech\DB\Extension\ExpressionExtension.cs" />
+    <Compile Include="EgoalTech\DB\Extension\SqlTypeExtension.cs" />
+    <Compile Include="EgoalTech\DB\Extension\DbContext.cs" />
+    <Compile Include="EgoalTech\DB\Extension\SystemProperty.cs" />
+    <Compile Include="EgoalTech\DB\Extension\ObjectNotFoundErrorCodeBuilder.cs" />
+    <Compile Include="EgoalTech\DB\Extension\SqlMethod\SqlMethod.cs" />
+    <Compile Include="EgoalTech\DB\Extension\SqlMethodAttribute.cs" />
+    <Compile Include="EgoalTech\DB\Extension\ORMErrorCode.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\EgoalTech.Wcf.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\EgoalTech.Wcf.pdb
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\EgoalTech.Commons.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\EgoalTech.DB.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\EgoalTech.DB.Extension.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\EgoalTech.UserAccessManage.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\EgoalTech.UserAccessManage.Model.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\log4net.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\bin\Debug\Microsoft.Unity.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\obj\Debug\EgoalTech.Wcf.csprojResolveAssemblyReference.cache
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\obj\Debug\EgoalTech.Wcf.dll
+C:\Users\paul\Documents\aopiocwcf\Egoal.Wcf\obj\Debug\EgoalTech.Wcf.pdb
