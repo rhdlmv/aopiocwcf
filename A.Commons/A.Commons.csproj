@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5600F060-C633-4052-BAFF-CC30A82B1B6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>A.Commons</RootNamespace>
+    <AssemblyName>A.Commons</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Commons\AsyncHandler!1.cs" />
+    <Compile Include="Commons\Cache\CacheData!2.cs" />
+    <Compile Include="Commons\Cache\ICache!2.cs" />
+    <Compile Include="Commons\Cache\LFUCache!2.cs" />
+    <Compile Include="Commons\Cache\LRUCache!2.cs" />
+    <Compile Include="Commons\Cache\MemoryCache!2.cs" />
+    <Compile Include="Commons\Cache\RandomReplacementCache!2.cs" />
+    <Compile Include="Commons\Cache\TimeoutCache!2.cs" />
+    <Compile Include="Commons\Db\SqlStringBuilder.cs" />
+    <Compile Include="Commons\Exception\ArgumentIsNullOrEmptyException.cs" />
+    <Compile Include="Commons\Exception\CommonException.cs" />
+    <Compile Include="Commons\Exception\FailedToSendEmailException.cs" />
+    <Compile Include="Commons\Exception\GenericException.cs" />
+    <Compile Include="Commons\Exception\InternalSystemException.cs" />
+    <Compile Include="Commons\Exception\ObjectAlreadyExistException!1.cs" />
+    <Compile Include="Commons\Exception\ObjectAlreadyExistException.cs" />
+    <Compile Include="Commons\Exception\ObjectDependencyException!1.cs" />
+    <Compile Include="Commons\Exception\ObjectDependencyException.cs" />
+    <Compile Include="Commons\Exception\ObjectNotFoundException!1.cs" />
+    <Compile Include="Commons\Exception\ObjectNotFoundException.cs" />
+    <Compile Include="Commons\Exception\PropertyInfoNotFoundException.cs" />
+    <Compile Include="Commons\Exception\RemoveAssociatedRecordException.cs" />
+    <Compile Include="Commons\Exception\RemoveSystemDefaultRecordException!1.cs" />
+    <Compile Include="Commons\Exception\SerializationException.cs" />
+    <Compile Include="Commons\Exception\UnknownObjectTypeException.cs" />
+    <Compile Include="Commons\Logger\DefaultEmailSender.cs" />
+    <Compile Include="Commons\Logger\DefaultLogger.cs" />
+    <Compile Include="Commons\Logger\IEmailSender.cs" />
+    <Compile Include="Commons\Logger\ILogger.cs" />
+    <Compile Include="Commons\Logger\Logger.cs" />
+    <Compile Include="Commons\Singleton!1.cs" />
+    <Compile Include="Commons\SystemErrorCode.cs" />
+    <Compile Include="Commons\Utils\ArrayUtils.cs" />
+    <Compile Include="Commons\Utils\CloneUtils.cs" />
+    <Compile Include="Commons\Utils\DateTimeUtils.cs" />
+    <Compile Include="Commons\Utils\EncryptUtils.cs" />
+    <Compile Include="Commons\Utils\GenericInvoker.cs" />
+    <Compile Include="Commons\Utils\MathUtils.cs" />
+    <Compile Include="Commons\Utils\Month.cs" />
+    <Compile Include="Commons\Utils\NumberUtils.cs" />
+    <Compile Include="Commons\Utils\Quarter.cs" />
+    <Compile Include="Commons\Utils\RandomUtils.cs" />
+    <Compile Include="Commons\Utils\ReflectionUtils.cs" />
+    <Compile Include="Commons\Utils\SerializationUtils.cs" />
+    <Compile Include="Commons\Utils\StringUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\DateTimeExtension.cs" />
+    <Compile Include="System\ExceptionExtension.cs" />
+    <Compile Include="System\ObjectExtension.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

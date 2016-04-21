@@ -1,1 +1,6 @@
 C:\Users\paul\Documents\aopiocwcf\A.DB\obj\Debug\A.DB.csprojResolveAssemblyReference.cache
+D:\git\aopiocwcf\A.DB\obj\Debug\A.DB.csprojResolveAssemblyReference.cache
+D:\git\aopiocwcf\A.DB\bin\Debug\A.DB.dll
+D:\git\aopiocwcf\A.DB\bin\Debug\A.DB.pdb
+D:\git\aopiocwcf\A.DB\obj\Debug\A.DB.dll
+D:\git\aopiocwcf\A.DB\obj\Debug\A.DB.pdb

@@ -1,12 +1,13 @@
-﻿namespace EgoalTech.DB
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Runtime.InteropServices;
-    using System.Runtime.Serialization;
-    using System.Threading;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq.Expressions;
+using System.Runtime.InteropServices;
+using System.Runtime.Serialization;
+using System.Threading;
 
+namespace EgoalTech.DB
+{
     [DataContract]
     public abstract class DbObject : IStorageObject, INotifyPropertyChanged
     {
@@ -24,7 +25,7 @@
             this.PropertyChanged += new PropertyChangedEventHandler(this.OnPropertyChanged);
         }
 
-        public virtual T Clone<T>() where T: DbObject, new()
+        public virtual T Clone<T>() where T : DbObject, new()
         {
             T local = DbObjectTools.Clone<T>(this);
             CloneUtils.CloneObject<DbObjectState>(this.State, local.State, new Expression<Func<DbObjectState, object>>[0]);
@@ -63,7 +64,7 @@
         {
             if (this.Values.ContainsKey(propertyName))
             {
-                return (T) this.GetValue(propertyName);
+                return (T)this.GetValue(propertyName);
             }
             return default(T);
         }

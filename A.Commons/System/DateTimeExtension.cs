@@ -8,14 +8,18 @@
         public static string FormatToSql(this DateTime datetime)
         {
             DateTime time = (datetime <= SqlDateTime.MinValue.Value) ? SqlDateTime.MinValue.Value : datetime;
-            return $"{time:yyyy-MM-dd HH:mm:ss.fff}";
+            return string.Format("{0:yyyy-MM-dd HH:mm:ss.fff}", time);
         }
 
-        public static string FormatToSql(this TimeSpan timeSpan) => 
-            $"{DateTime.Now.Date.Add(timeSpan.Duration()):HH:mm:ss.fff}"
+        public static string FormatToSql(this TimeSpan timeSpan)
+        {
+            return string.Format("{0:HH:mm:ss.fff}", DateTime.Now.Date.Add(timeSpan.Duration()));
+        }
 
-        public static string FormatToUTC(this DateTime datetime) => 
-            $"{datetime:yyyy-MM-dd HH:mm:ss zz00}"
+        public static string FormatToUTC(this DateTime datetime)
+        {
+            return string.Format("{0:yyyy-MM-dd HH:mm:ss zz00}", datetime);
+        }
 
         public static string FormatToUTC(this DateTime? datetime)
         {
@@ -23,7 +27,7 @@
             {
                 return "null";
             }
-            return $"{datetime.Value:yyyy-MM-dd HH:mm:ss zz00}";
+            return string.Format("{0:yyyy-MM-dd HH:mm:ss zz00}", datetime.Value);
         }
     }
 }

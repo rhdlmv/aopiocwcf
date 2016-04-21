@@ -1,5 +1,5 @@
 ﻿using EgoalTech.DB;
-using EgoalTech.DB.Extension;
+using A.DBExtension;
 using EgoalTech.UserAccessManage;
 using Microsoft.Practices.Unity;
 using System;

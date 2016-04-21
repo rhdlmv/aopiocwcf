@@ -108,7 +108,7 @@
             }
             builder.Append(this.logFilename + ".log");
             appender.File = builder.ToString();
-            appender.MaxFileSize = 0x100000L;
+            appender.MaxFileSize = 1024 * 1024;
             appender.MaxSizeRollBackups = -1;
             appender.RollingStyle = log4net.Appender.RollingFileAppender.RollingMode.Composite;
             appender.AppendToFile = true;

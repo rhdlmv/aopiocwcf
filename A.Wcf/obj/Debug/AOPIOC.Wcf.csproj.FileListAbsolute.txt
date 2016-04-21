@@ -22,3 +22,15 @@ C:\Users\paul\Documents\aopiocwcf\A.Wcf\bin\Debug\Microsoft.Unity.dll
 C:\Users\paul\Documents\aopiocwcf\A.Wcf\obj\Debug\AOPIOC.Wcf.csprojResolveAssemblyReference.cache
 C:\Users\paul\Documents\aopiocwcf\A.Wcf\obj\Debug\AOPIOC.Wcf.dll
 C:\Users\paul\Documents\aopiocwcf\A.Wcf\obj\Debug\AOPIOC.Wcf.pdb
+D:\git\aopiocwcf\A.Wcf\bin\Debug\AOPIOC.Wcf.dll
+D:\git\aopiocwcf\A.Wcf\bin\Debug\AOPIOC.Wcf.pdb
+D:\git\aopiocwcf\A.Wcf\bin\Debug\EgoalTech.Commons.dll
+D:\git\aopiocwcf\A.Wcf\bin\Debug\EgoalTech.DB.dll
+D:\git\aopiocwcf\A.Wcf\bin\Debug\EgoalTech.DB.Extension.dll
+D:\git\aopiocwcf\A.Wcf\bin\Debug\EgoalTech.UserAccessManage.dll
+D:\git\aopiocwcf\A.Wcf\bin\Debug\EgoalTech.UserAccessManage.Model.dll
+D:\git\aopiocwcf\A.Wcf\bin\Debug\log4net.dll
+D:\git\aopiocwcf\A.Wcf\bin\Debug\Microsoft.Unity.dll
+D:\git\aopiocwcf\A.Wcf\obj\Debug\AOPIOC.Wcf.csprojResolveAssemblyReference.cache
+D:\git\aopiocwcf\A.Wcf\obj\Debug\AOPIOC.Wcf.dll
+D:\git\aopiocwcf\A.Wcf\obj\Debug\AOPIOC.Wcf.pdb

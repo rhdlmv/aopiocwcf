@@ -52,7 +52,7 @@
             PropertyInfo[] properties = type.GetProperties();
             if (properties.Length == 0)
             {
-                throw new Exception($"The perperties of type({type.Name}) is empty.");
+                throw new Exception(string.Format("The perperties of type({0}) is empty.", type.Name));
             }
             List<Action<object, Dictionary<string, string>>> list = new List<Action<object, Dictionary<string, string>>>();
             foreach (PropertyInfo info in properties)
@@ -99,8 +99,10 @@
             };
         }
 
-        public static Dictionary<string, string> ToPropertyValues<T>(this T obj) => 
-            Get(typeof(T))(obj)
+        public static Dictionary<string, string> ToPropertyValues<T>(this T obj)
+        {
+            return Get(typeof(T))(obj);
+        }
     }
 }
 

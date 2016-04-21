@@ -103,7 +103,7 @@
             }
             if (type.Equals(typeof(DateTime)))
             {
-                DateTime time = (DateTime) obj2;
+                DateTime time = (DateTime)obj2;
                 obj2 = new DateTime(time.Ticks, DateTimeKind.Local);
             }
             return obj2;
@@ -121,7 +121,7 @@
             }
             if (value.GetType() == typeof(string))
             {
-                string str = (string) value;
+                string str = (string)value;
                 return Escape(str);
             }
             if (value.GetType() == typeof(Guid))
@@ -130,16 +130,16 @@
             }
             if (value.GetType() == typeof(DateTime))
             {
-                DateTime time = (DateTime) value;
+                DateTime time = (DateTime)value;
                 if (time.Equals(DateTime.MinValue) || time.Equals(DateTime.MaxValue))
                 {
                     return "null";
                 }
-                return GetDateString((DateTime) value);
+                return GetDateString((DateTime)value);
             }
             if (value.GetType() == typeof(DateTimeOffset))
             {
-                DateTimeOffset date = (DateTimeOffset) value;
+                DateTimeOffset date = (DateTimeOffset)value;
                 if (date.Equals(DateTimeOffset.MinValue) || date.Equals(DateTimeOffset.MaxValue))
                 {
                     return "null";
@@ -152,7 +152,7 @@
             }
             if (value.GetType() == typeof(bool))
             {
-                if ((bool) value)
+                if ((bool)value)
                 {
                     return "1";
                 }
@@ -166,7 +166,7 @@
             {
                 return ToHexString(value as byte[]);
             }
-            return (value);
+            return "";
         }
     }
 }
