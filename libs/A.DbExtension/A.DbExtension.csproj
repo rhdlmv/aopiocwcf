@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A904831-79F4-4462-B899-C62E58A8085F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>A.DbExtension</RootNamespace>
+    <AssemblyName>A.DbExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayExtension.cs" />
+    <Compile Include="DataVerifyErrorException.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="DbOperation.cs" />
+    <Compile Include="DbOperationExtension.cs" />
+    <Compile Include="DbQuery!1.cs" />
+    <Compile Include="DbQuery.cs" />
+    <Compile Include="DbRuleContext.cs" />
+    <Compile Include="ExpressionConverter.cs" />
+    <Compile Include="ExpressionExtension.cs" />
+    <Compile Include="IDbContext.cs" />
+    <Compile Include="IDbObjectInfo!1.cs" />
+    <Compile Include="IDbQuery.cs" />
+    <Compile Include="IDbRuleContext.cs" />
+    <Compile Include="IModelValidator!1.cs" />
+    <Compile Include="IRuleMapper!1.cs" />
+    <Compile Include="ObjectNotFoundErrorCodeBuilder.cs" />
+    <Compile Include="OrderBy!1.cs" />
+    <Compile Include="ORMErrorCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyInfoExtension.cs" />
+    <Compile Include="RuleEngine!1.cs" />
+    <Compile Include="SqlFormatterExtension.cs" />
+    <Compile Include="SqlMethodAttribute.cs" />
+    <Compile Include="SqlMethod\SqlMethod.cs" />
+    <Compile Include="SqlTypeExtension.cs" />
+    <Compile Include="SystemProperty.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\A.Commons\A.Commons.csproj">
+      <Project>{5600f060-c633-4052-baff-cc30a82b1b6c}</Project>
+      <Name>A.Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\A.DB\A.DB.csproj">
+      <Project>{28b4fb5c-835e-4299-9461-f9d23756ccc4}</Project>
+      <Name>A.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\A.Validation\A.Validation.csproj">
+      <Project>{f2df8f7c-a90a-4abe-9b10-2fd1fff6f345}</Project>
+      <Name>A.Validation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

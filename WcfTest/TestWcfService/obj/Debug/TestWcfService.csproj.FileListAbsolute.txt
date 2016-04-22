@@ -1,0 +1,6 @@
+D:\git\aopiocwcf\WcfTest\TestWcfService\bin\TestWcfService.dll.config
+D:\git\aopiocwcf\WcfTest\TestWcfService\bin\TestWcfService.dll
+D:\git\aopiocwcf\WcfTest\TestWcfService\bin\TestWcfService.pdb
+D:\git\aopiocwcf\WcfTest\TestWcfService\obj\Debug\TestWcfService.csprojResolveAssemblyReference.cache
+D:\git\aopiocwcf\WcfTest\TestWcfService\obj\Debug\TestWcfService.dll
+D:\git\aopiocwcf\WcfTest\TestWcfService\obj\Debug\TestWcfService.pdb

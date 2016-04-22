@@ -1,0 +1,9 @@
+D:\git\aopiocwcf\A.Commons\bin\Debug\A.Commons.dll
+D:\git\aopiocwcf\A.Commons\bin\Debug\A.Commons.pdb
+D:\git\aopiocwcf\A.Commons\bin\Debug\log4net.dll
+D:\git\aopiocwcf\A.Commons\obj\Debug\A.Commons.dll
+D:\git\aopiocwcf\A.Commons\obj\Debug\A.Commons.pdb
+D:\git\aopiocwcf\Libs\A.Commons\bin\Debug\A.Commons.dll
+D:\git\aopiocwcf\Libs\A.Commons\bin\Debug\A.Commons.pdb
+D:\git\aopiocwcf\Libs\A.Commons\obj\Debug\A.Commons.dll
+D:\git\aopiocwcf\Libs\A.Commons\obj\Debug\A.Commons.pdb

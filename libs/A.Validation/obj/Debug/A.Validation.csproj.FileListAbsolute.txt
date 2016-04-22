@@ -1,0 +1,8 @@
+D:\git\aopiocwcf\A.Validation\bin\Debug\A.Validation.dll
+D:\git\aopiocwcf\A.Validation\bin\Debug\A.Validation.pdb
+D:\git\aopiocwcf\A.Validation\obj\Debug\A.Validation.dll
+D:\git\aopiocwcf\A.Validation\obj\Debug\A.Validation.pdb
+D:\git\aopiocwcf\Libs\A.Validation\bin\Debug\A.Validation.dll
+D:\git\aopiocwcf\Libs\A.Validation\bin\Debug\A.Validation.pdb
+D:\git\aopiocwcf\Libs\A.Validation\obj\Debug\A.Validation.dll
+D:\git\aopiocwcf\Libs\A.Validation\obj\Debug\A.Validation.pdb

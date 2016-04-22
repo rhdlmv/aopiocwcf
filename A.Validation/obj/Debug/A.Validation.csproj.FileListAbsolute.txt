@@ -1,5 +1,0 @@
-D:\git\aopiocwcf\A.Validation\obj\Debug\A.Validation.csprojResolveAssemblyReference.cache
-D:\git\aopiocwcf\A.Validation\bin\Debug\A.Validation.dll
-D:\git\aopiocwcf\A.Validation\bin\Debug\A.Validation.pdb
-D:\git\aopiocwcf\A.Validation\obj\Debug\A.Validation.dll
-D:\git\aopiocwcf\A.Validation\obj\Debug\A.Validation.pdb

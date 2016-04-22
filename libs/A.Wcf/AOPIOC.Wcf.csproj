@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE767FAB-EE6B-4889-8FE0-02BE3EB71A48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AOPIOC.Wcf</RootNamespace>
+    <AssemblyName>AOPIOC.Wcf</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Unity">
+      <HintPath>..\libs\Microsoft.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AuthenticationAttribute.cs" />
+    <Compile Include="DefaultUnityConfig.cs" />
+    <Compile Include="EGInstanceProvider.cs" />
+    <Compile Include="EGOperationBehavior.cs" />
+    <Compile Include="EGServiceBehavior.cs" />
+    <Compile Include="EGServiceHost.cs" />
+    <Compile Include="EGServiceHostFactory.cs" />
+    <Compile Include="EGUserAccessManager.cs" />
+    <Compile Include="ExceptionFormatter.cs" />
+    <Compile Include="IExceptionFormatter.cs" />
+    <Compile Include="IObjectContainer.cs" />
+    <Compile Include="IObjectContainerConfig.cs" />
+    <Compile Include="IOperationKeyFormatter.cs" />
+    <Compile Include="Lifecycle.cs" />
+    <Compile Include="NoPermissionException.cs" />
+    <Compile Include="ObjectContainerFactory.cs" />
+    <Compile Include="OperationAttribute.cs" />
+    <Compile Include="OperationKey.cs" />
+    <Compile Include="OperationKeyFormatter.cs" />
+    <Compile Include="PermissionAttribute.cs" />
+    <Compile Include="StopwatchAttribute.cs" />
+    <Compile Include="TransactionAttribute.cs" />
+    <Compile Include="UnityObjectContainer.cs" />
+    <Compile Include="UserAccessInfo.cs" />
+    <Compile Include="WcfContext.cs" />
+    <Compile Include="WcfContextLifetimeManager.cs" />
+    <Compile Include="WcfErrorCode.cs" />
+    <Compile Include="WcfLogger.cs" />
+    <Compile Include="WcfUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\A.Commons\A.Commons.csproj">
+      <Project>{5600f060-c633-4052-baff-cc30a82b1b6c}</Project>
+      <Name>A.Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\A.DbExtension\A.DbExtension.csproj">
+      <Project>{8a904831-79f4-4462-b899-c62e58a8085f}</Project>
+      <Name>A.DbExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\A.DB\A.DB.csproj">
+      <Project>{28b4fb5c-835e-4299-9461-f9d23756ccc4}</Project>
+      <Name>A.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\A.UserAccessManage\A.UserAccessManage.csproj">
+      <Project>{0957008d-fb76-45de-8846-0a2ab5367071}</Project>
+      <Name>A.UserAccessManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
